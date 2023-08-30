@@ -19,7 +19,7 @@ The answer: this data set most likely contains order values with a NULL customer
 When using the SELECT clause with conditions, rows with the NULL value will not match against either the = or the <> operator.
 
 Our second query above could be modified as follows to produce the expected results:
+*/
 
 SELECT * FROM orders WHERE (customer_id <> 45 OR customer_id IS NULL);
 	-- 977 rows in set (0.11 sec)
-*/
